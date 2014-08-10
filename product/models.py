@@ -10,7 +10,7 @@ class Product(models.Model):
     created = models.DateTimeField(auto_now_add=True)
 
     def __unicode__(self):
-        return u'{} - {} - ${:2f}'.format(self.merchant.name,
-                                          self.name,
-                                          self.price
-                                          )
+        return u'{} - {} - ${}'.format(self.merchant.name,
+                                       self.name,
+                                       self.price
+                                       )
